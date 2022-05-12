@@ -221,9 +221,8 @@ img[alt="share"] {
     grid-area: sidebar;
     background-color: var(--primaryColor);
     font-size: 1.5rem;
-    padding: 20px 10px 0px 30px;
+    padding-top: 20px;
 }
-
 .sidebar ul {
     list-style: none;
     margin:35px 0px;
@@ -235,11 +234,13 @@ img[alt="share"] {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 12px;
-    padding: 10px 0px;
+    padding: 10px 10px 10px 30px;
 }
 
 .sidebar li a:hover {
-    text-decoration: underline;
+    background-color: #ccfbf157;
+    border-left: 6px solid var(--bgColor);
+    padding-left: 24px;
 }
 
 .logo svg {
