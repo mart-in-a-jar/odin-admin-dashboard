@@ -25,7 +25,7 @@ body {
     display: grid;
     grid-template: "sidebar header" 170px
           "sidebar main" 1fr
-          / 1fr 5fr;
+          / minmax(auto, 350px) 1fr;
 }
 
 header {
@@ -46,9 +46,8 @@ header {
     grid-area: main;
     background-color: var(--bgColor);
     display: grid;
-    grid-template: "projects announcements" 1fr
-                    "projects trending" 1fr
-                    / 2fr minmax(auto, 300px);
+    grid-template: "projects rightside"
+                    / 1fr minmax(auto, 300px);
     padding: 10px 20px;
     gap: 25px;
 }
@@ -99,14 +98,6 @@ header .buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px
-}
-
-.announcements {
-    grid-area: announcements;
-}
-
-.trending {
-    grid-area: trending;
 }
 
 .card {
