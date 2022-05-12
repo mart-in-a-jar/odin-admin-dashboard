@@ -1,5 +1,5 @@
-const userName = "Martin Jarneid";
-const userHandle = "mjartin";
+const userName = "Martin Partin";
+const userHandle = "pjartin";
 
 const userNameFields = document.querySelectorAll(".userName");
 const userHandleFields = document.querySelectorAll(".userHandle");
