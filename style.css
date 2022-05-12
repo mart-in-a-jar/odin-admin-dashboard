@@ -25,7 +25,7 @@ body {
     display: grid;
     grid-template: "sidebar header" 170px
           "sidebar main" 1fr
-          / minmax(auto, 350px) 1fr;
+          / auto 1fr;
     min-height: 100vh;
 }
 
@@ -150,6 +150,15 @@ header .buttons {
 
 .announcement strong {
     display: block;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.announcement p {
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis ellipsis;
+    margin: 15px 0px;
 }
 
 .announcements.modules,
@@ -243,6 +252,7 @@ img[alt="share"] {
 .logo {
     font-size: 2.3rem;
     font-weight: bold;
+    margin-right: 15px;
 }
 
 .search input{
@@ -284,4 +294,8 @@ header .userHandle {
 
 .greeting .profilePicture {
     width: 85px;
+}
+
+.rightSide p {
+    color: rgb(71, 71, 71);
 }
