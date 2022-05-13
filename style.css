@@ -23,7 +23,7 @@ body {
 .container {
     margin: 0;
     display: grid;
-    grid-template: "sidebar header" 170px
+    grid-template: "sidebar header" 180px
           "sidebar main" 1fr
           / auto 1fr;
     min-height: 100vh;
@@ -36,6 +36,7 @@ header {
     margin: 0 40px;
     align-items: center;
     min-width: 600px;
+    padding: 10px 0;
 }
 
 .mainContent {
